@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" sample homepage">
+<title>Event Planning | GoSwgaless</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="GoSwagless" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> GoSwagless</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/capitalone/GoSwagless" target="_blank">GitHub</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:developer@capitalone.com?subject=GoSwagless documentation Feedback feedback&body=I have some feedback about the Event Planning page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Event Planning">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a href="#">Go Swagless</a>
+      <ul>
+          
+          
+          
+          <li><a href="index.html">Introduction</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">How to Go Swagless</a>
+      <ul>
+          
+          
+          
+          <li><a href="how_togo_swagless.html">Overview</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Event Planning Tips</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a href="event_planning.html">Event Engagement</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="event_planning.html#content--creative">Content & Creative</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="event_planning.html#social-engagement">Social Engagement</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+      -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Event Planning</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+
+
+    
+
+
+    
+
+  <h3 id="event-engagement">Event Engagement</h3>
+<p>There are many ways that your visitors can engage with the GoSwagless program during the event. Here are a few methods:</p>
+<ul>
+  <li>Voting. If you are supporting more than one nonprofit at you event, you can have participants vote for the nonprofit that they would like to support. The donation can then be split along the same ratio as the voting results. Voting mechanisms can include:
+    <ul>
+      <li>Placing stickers on a board listing the nonprofits.</li>
+      <li>Placing tokens into clear plastic boxes on a board listing the nonprofits. (See below)</li>
+      <li>Creating a Twitter or Facebook poll on your company’s social account.</li>
+      <li>Displaying a digital survey on a touch screen or tablet.</li>
+    </ul>
+  </li>
+  <li>Thought Board. This can be displayed at your booth or another location at the event and allows visitors to post (markers, stickie notes, etc.) responses to questions related to the GoSwagless program.</li>
+</ul>
+
+<h3 id="content--creative">Content &amp; Creative</h3>
+<ul>
+  <li>There are various types of content that you can create to support your GoSwagless campaign before, during, and after the events:
+    <ul>
+      <li>Articles and/or blog posts about the nonprofits and programs that you’re supporting.</li>
+      <li>Posters and banners (digital or print) with information about the nonprofits.</li>
+      <li>Social posts (Twitter, Facebook, LinkedIn, etc.).</li>
+    </ul>
+  </li>
+  <li>You’ll need to gather several assets from the nonprofit(s) to get started:
+    <ul>
+      <li>High quality logo file.</li>
+      <li>Brief description of their mission.</li>
+    </ul>
+  </li>
+  <li>In this repository’s files you will find:
+    <ul>
+      <li>A GoSwagless (JPG) <a href="https://github.com/capitalone/GoSwagless/blob/master/GoSwagless-Hexagon-Generic.png">logo</a></li>
+      <li>An editable (PSD) GoSwagless <a href="https://github.com/capitalone/GoSwagless/blob/master/GoSwagless-Hexagon-Logo.psd">logo</a> with room for your company’s logo</li>
+      <li>An editable awareness <a href="https://github.com/capitalone/GoSwagless/blob/master/GoSwagless-Poster-Awareness-Print.pdf">poster</a> (PDF)</li>
+      <li>An editable awareness <a href="https://github.com/capitalone/GoSwagless/blob/master/GoSwagless-Poster-Awareness.indt">poster</a> (InDesign)</li>
+      <li>An editable nonprofit promotional <a href="https://github.com/capitalone/GoSwagless/blob/master/GoSwagless-Poster-Charity.pdf">poster</a> (PDF)</li>
+      <li>An editable nonprofit promotional <a href="https://github.com/capitalone/GoSwagless/blob/master/GoSwagless-Poster-Charity.indt">poster</a> (InDesign)</li>
+      <li>An editable (PDF) social <a href="https://github.com/capitalone/GoSwagless/blob/master/GoSwagless-Twitter-Card.pdf">graphic</a> (for Twitter, LinkedIn, Facebook, etc.)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="social-engagement">Social Engagement</h3>
+<p>Create a campaign on your social media to make your followers aware of what you’re doing at the events. Be sure to use the #GoSwagless hashtag when publishing social content.</p>
+
+<h4 id="sample-faqs">Sample FAQs</h4>
+<p>Here are some questions that you may want to have ready responses for at the events where you #GoSwagless:</p>
+
+<ul>
+  <li>What is GoSwagless? (What does it mean? What’s in it for your company? Why did you decide to start doing this?)
+    <ul>
+      <li>The GoSwagless concept is a simple but powerful one – use the budget and resources that your company would normally spend on giveaways items to support a nonprofit.</li>
+    </ul>
+  </li>
+  <li>Why isn’t your company doing this at all your events?</li>
+  <li>Why did you spend money on posters and stickers? Isn’t a sticker considered swag?
+    <ul>
+      <li>Part of any successful movement is communication, and these posters and stickers are a tool to help us do just that. We’re hoping that by shedding light on this movement and the nonprofits, we can have an impact beyond just this event (i.e. volunteering, personal donations, etc.). We also kept costs low, so we could give more.</li>
+    </ul>
+  </li>
+  <li>Can I pay for the sticker or donate more money?
+    <ul>
+      <li>We’re not accepting donations at the event, but please visit the participating nonprofits websites for more opportunities to give back.</li>
+    </ul>
+  </li>
+  <li>Why only $XXX? Surely, you can afford more?
+    <ul>
+      <li>We took our pre-approved swag budget and decided to donate it— that way we can give back to our community and still accomplish our goals. Our company has other giving programs, too. You can learn more here: _____.</li>
+    </ul>
+  </li>
+  <li>Are you just doing this to spend less?
+    <ul>
+      <li>We would have spent this amount on swag regardless.</li>
+    </ul>
+  </li>
+  <li>But I like the swag. Can you still send me swag?
+    <ul>
+      <li>We’ve committed to giving back and making a difference in our community through this movement. We used our entire event swag budget on GoSwagless, which means we haven’t ordered swag beyond the stickers. Why would you prefer swag? If we went back to swag, what do you like?</li>
+    </ul>
+  </li>
+  <li>Will you donate money under my name?
+    <ul>
+      <li>We’re not currently setup to make donations by name, but it’s something we may explore for future events.</li>
+    </ul>
+  </li>
+  <li>Will you donate even if I don’t vote?
+    <ul>
+      <li>Yes, we will. We’d like your help on selecting how the money gets divided, as knowing our community’s point-of-view is important to us.</li>
+    </ul>
+  </li>
+  <li>What happens if no one votes?
+    <ul>
+      <li>If no one votes, we’ll split the donation equally.</li>
+    </ul>
+  </li>
+  <li>How much have you donated so far?</li>
+</ul>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+              
+ Site last generated: May 16, 2018 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>

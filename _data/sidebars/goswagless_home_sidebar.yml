@@ -1,0 +1,33 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  levels: one
+  folders:
+
+  - title: Go Swagless
+    output: web
+    folderitems:
+      - title: Introduction
+        url: /index.html
+        output: web
+  
+  - title: How to Go Swagless
+    output: web    
+    folderitems:
+      - title: Overview
+        url: /how_togo_swagless.html
+        output: web
+  
+  - title: Event Planning Tips
+    output: web    
+    folderitems:
+      - title: Event Engagement
+        url: /event_planning.html
+        output: web
+      - title: Content & Creative
+        url: /event_planning.html#content--creative
+        output: web
+      - title: Social Engagement
+        url: /event_planning.html#social-engagement
+        output: web               

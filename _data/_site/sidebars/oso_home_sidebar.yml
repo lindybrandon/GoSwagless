@@ -1,0 +1,32 @@
+# This is the sidebar for the Hme Page and also the default side bar if one is not specified for a page
+
+entries:
+- title: Sidebar
+  levels: one
+  folders:
+
+  - title: Welcome 
+    output: web
+    folderitems:
+    - title: About Us
+      url: /index.html#about-us
+      output: web
+    - title: Office Hours
+      url: /index.html#office-hours
+      output: web
+    
+  - title: Launching Open Source Software
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /oso_launching_project.html#Introduction
+      output: web
+    - title: Preparing for Launch
+      url: /oso_launching_project.html#preparing-for-release
+      output: web
+    - title: Getting Approval
+      url: /oso_launching_project.html
+      output: web
+    - title: How is access to external Capital One Github Org managed
+      url: /oso_external_github_access.html
+      output: web
